@@ -31,5 +31,9 @@ class TestSum(unittest.TestCase):
         data = []
         result = sum(data)
         self.assertEqual(result, 0)
+    def test_no_num(self):
+        data = ['i dont know']
+        result = sum(data)
+        self.assertEqual(result, 15)
         
   
